@@ -1,9 +1,68 @@
-.App {
+
+.digit-box {
+  width: 30%;
+  height: 50px;
+  background-color: #a0e4f7;
+  border: solid black 1px;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  font-style: black;
+  color: black;
 }
 
+.digit-box:hover {
+  cursor: pointer;
+}
+
+.digit-box:active {
+  cursor: pointer;
+  background-color: white;
+}
+
+.phone-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+/* functional button */
+.function-button-container {
+  display: flex;
+  gap: 15px;
+}
+
+.function-button {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border: solid 1px white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.function-button:active {
+  background-color: white;
+  color: black;
+}
+
+/* display */
+.number-ui {
+  border: 1px solid white;
+  border-radius: 6px;
+  display: flex;
+  width:30%;
+  margin: 10px;
+}
+
+
+/* Below are default settings */
 .App-logo {
   height: 40vmin;
+  width: 160px;
+  height: 160px;
   pointer-events: none;
 }
 
