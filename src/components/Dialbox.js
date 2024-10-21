@@ -2,9 +2,15 @@ import React from 'react'
 
 const Dialbox = ({onDial}) => {
 
+  const playSound = () =>{
+    const audio = new Audio('./light_switch.mp3')
+    audio.play().catch((error)=>{
+      console.log('Error playing audio:', error)
+    })
+  }
   const handleClick = (digit) =>{
-    
     onDial(digit)
+    playSound()
   }
 
   return (
