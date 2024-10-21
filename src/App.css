@@ -1,4 +1,20 @@
+/* when call or not call*/
+.overlay {
+  position: absolute;
+  display:block;
+  color: black;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(27, 30, 36, 0.5);
+  z-index: 1000;
+  transition: 1s;
+}
 
+.transparent {
+  display: none;
+}
+
+/* numbers */
 .digit-box {
   width: 30%;
   height: 50px;

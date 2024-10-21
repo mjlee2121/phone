@@ -10,8 +10,16 @@ function App() {
   const [dialedNumber, setDialedNumber] = useState('')
   const [isCallClicked, setIsCallClicked] = useState(false)
 
-  const playSound = () =>{
+  const playClickSound = () =>{
     const audio = new Audio('./light_switch.mp3')
+
+    audio.play().catch((error)=>{
+      console.log('Error playing audio:', error)
+    })
+  }
+
+  const playCallingSound = () =>{
+    const audio = new Audio('./phone_outgoing_call.mpc')
     audio.play().catch((error)=>{
       console.log('Error playing audio:', error)
     })
@@ -24,15 +32,18 @@ function App() {
 
   const handleDelete = () =>{
     setDialedNumber(prev => prev.slice(0,-1))
-    playSound()
+    playClickSound()
   }
+  
   const handleCall = () =>{
-    playSound()
+    playClickSound()
+    setIsCallClicked(true)
   }
 
   return (
     <div className="App">
       <header className="App-header">
+        <div className= {isCallClicked ? 'overlay':'transparent'} />
         <img src={logo} className="App-logo" alt="logo" />
           <h1>Minji Phone</h1>
           <NumberUI number={dialedNumber}/>
