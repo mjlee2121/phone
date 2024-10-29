@@ -1,17 +1,70 @@
+/* */
+.root {
+  background: rgb(27, 30, 36, 0.5);
+}
+
+.root h1 {
+  align-items: center;
+  text-align: center;
+}
+
 /* when call or not call*/
 .overlay {
   position: absolute;
-  display:block;
-  color: black;
+  display:flex;
   height: 100vh;
   width: 100vw;
   background: rgb(27, 30, 36, 0.5);
+  z-index: 5;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay .on-overlay {
+  color: white;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width:18vw;
+  font-size:46px;
   z-index: 1000;
-  transition: 1s;
+}
+
+
+.overlay .on-overlay .little-block{
+  background: rgb(194, 208, 247);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  border-radius: 6px;
+}
+
+.overlay .on-overlay .little-block p {
+  font-size: 26px;
+  color: black;
+}
+
+.cancel-call{
+  font-size:20px;
+  padding: 10px;
+  margin-top: 25px;
+  color: red;
+  background:white;
+  border-radius: 10px;
+  border: solid #465154 1px;
+  cursor: pointer;
 }
 
 .transparent {
   display: none;
+}
+
+.call-text {
+  margin-top:10px;
 }
 
 /* numbers */
@@ -46,16 +99,23 @@
 /* functional button */
 .function-button-container {
   display: flex;
-  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  box-sizing: border-box;
 }
 
 .function-button {
-  display: flex;
-  padding: 10px;
-  margin: 10px;
+  flex: 1;
+  margin: 0 10px;  
+  background-color: grey;
   text-align: center;
+  padding: 5px;
+  justify-content: center;
   border: solid 1px white;
   border-radius: 6px;
+  height: 5vh;
+  width: 8vw;
   cursor: pointer;
 }
 
@@ -68,11 +128,13 @@
 .number-ui {
   border: 1px solid white;
   border-radius: 6px;
-  display: flex;
-  width:30%;
+  display: block;
+  text-align: center;
+  align-items: center;
+  width: 25vw;
+  height: 8vh;
   margin: 10px;
 }
-
 
 /* Below are default settings */
 .App-logo {
