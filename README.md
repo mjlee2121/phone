@@ -1,5 +1,8 @@
 # Phone App
 
+## Try it yourself
+https://mjlee2121.github.io/phone/
+
 <img width="858" alt="Screen Shot 2024-10-29 at 9 39 50 AM" src="https://github.com/user-attachments/assets/508af6a1-dfc7-4d35-a6bf-282a3e252464">
 
 ## Description
