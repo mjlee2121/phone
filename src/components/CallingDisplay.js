@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
-
 const CallingDisplay = ({number, updateIsCallClicked}) => {
-
   const [dots, setDots] = useState('')
-  const [cancelCall, setCancelCall] = useState(false)
 
   const handleCancelButton = () =>{
     updateIsCallClicked(false)
