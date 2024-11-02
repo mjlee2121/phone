@@ -2,7 +2,7 @@
   "name": "phone",
   "version": "0.1.0",
   "private": true,
-  "homepage:": "https://mjlee2121.github.io/phone/",
+  "homepage:": "https://mjlee2121.github.io/phone",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
